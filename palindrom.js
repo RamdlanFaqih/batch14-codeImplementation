@@ -16,11 +16,10 @@ let kata = "IbU uBi";
 const deteksiPalindrom = (input) => {
     let word = input.toLowerCase().split(" ").join("");
     let reverseWord = [...word].reverse().join("");
-    // console.log(word, reverseWord)
-    if (word === reverseWord) {
-        console.log("Palindrom");
+    if (word !== reverseWord) {
+        console.log("Bukan Palindrom");
     } else {
-        console.log("bukan palindrom");
+        console.log("Palindrom");
     }
 }
 
